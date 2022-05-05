@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>RPN Calculator</h1>
+        <small>Write an equation in RPN and click <em>calculate</em></small>
+      </header>
+      <!-- <main>
+        <input type="text" class="rpn" id="myTextBox" />
+        <button class="btn" onClick="evalrpn('titi')">Calculate</button>
+        <div class="result">
+          <span>And the result is...</span>
+          <input class="rpn" type="text" id="myTextBoxResult" value="" />
+        </div>
+      </main> -->
+      <main>
+        <form method="post" action="/">
+          <input type="text" name="input" class="rpn" id="input" />
+          <button type="submit" class="btn" id="myBtn">Calculate</button>
+          <div class="result">
+            <span>And the result is...</span>
+            <em id="result"><%= (locals.result) ? locals.result : '' %> </em>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
