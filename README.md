@@ -5,5 +5,6 @@ Starter project for kata (Node, TypeScript, Jest)
 ## Getting started
 
 - **Fork**, then clone the repository
-- Install dependencies
-- Start developing (`npm test`)
+- Install dependencies (`npm i`)
+- Start developing (`npm run test`)
+- start project (`npm run start`)
